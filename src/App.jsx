@@ -11,8 +11,8 @@ import PreLoader from './Components/Preloader/Preloader';
 function App() {
   return (
     <div>
-    <PreLoader/>
       <Navbar />
+    <PreLoader/>
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />

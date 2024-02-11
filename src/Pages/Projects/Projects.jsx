@@ -4,6 +4,7 @@
 // import GridCardsAnimation from "../../Components/Grid cards/GridCardsAnimation";
 import project1 from '../../assets/interion-desing/office1.jpg';
 import FifthButton from '../../Components/Buttons/Btn-5/FifthButton';
+import Horizontal from '../../Components/Horizontal Scroll/Horizontal';
 import './Projects.scss'
 import { motion } from 'framer-motion';
 
@@ -43,6 +44,7 @@ import { motion } from 'framer-motion';
 function Projects() {
   return (
     <div className="gallery-container-page">
+    <Horizontal/>
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
