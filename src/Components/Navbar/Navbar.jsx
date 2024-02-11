@@ -1,5 +1,7 @@
-import  { useState,useEffect } from "react";
+import  { useState } from "react";
+import icons1 from '../../assets/Logo/logo1.png'
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
@@ -24,10 +26,14 @@ const Navbar = () => {
 
 
   return (
-    <div className={`bg-black flex justify-between items-center h-24 max-w-[1600px] mx-auto px-4 text-white `}>
+    <div
+      className={`bg-black flex justify-between items-center h-24 max-w-[1600px] mx-auto px-4 text-white z-10`}
+    >
       {/* Logo */}
       <h1 className="w-full text-3xl font-bold tracking-wider text-white">
-        <a href={'/'}>VIVIFY.</a>
+        <a href="/">
+          <img className="w-[200px] h-[200px]" src={icons1} />
+        </a>
       </h1>
 
       {/* Desktop Navigation */}
@@ -37,7 +43,7 @@ const Navbar = () => {
             key={item.id}
             className="p-4  rounded-lg m-2 cursor-pointer duration-300 hover:scale-110"
           >
-            <a href={item.link}>{item.text}</a>
+            <a href={`${item.link}`}>{item.text}</a>
           </li>
         ))}
       </ul>
@@ -51,12 +57,14 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-10"
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >
         {/* Mobile Logo */}
-        <h1 className="w-full text-3xl font-bold text-black m-4">REACT.</h1>
+        <h1 className="w-full text-3xl font-bold text-black m-4 ">
+          <img className="w-[200px] h-[200px]" src={icons1} />
+        </h1>
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (

@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,  } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer';
 // pages imports
@@ -9,19 +9,19 @@ import ContactPage from './Pages/Contact Page/ContactPage';
 import Projects from './Pages/Projects/Projects';
 function App() {
   return (
-   <div>
-      <Navbar/>
+    <div>
+      <Navbar />
       <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<AboutPage/>}/>
-        <Route path='/contact' element={<ContactPage/>}/>
-        <Route path='/projects' element={<Projects/>}/>
-      </Routes>
-     </BrowserRouter>
-     <Footer/>
-   </div>
-  )
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </div>
+  );
 }
 
 export default App

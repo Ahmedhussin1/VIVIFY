@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import desing1 from "../../../dist/assets/interion-desing/design-1.jpg";
-import desing2 from "../../../dist/assets/interion-desing/design-2.jpg";
-import desing3 from "../../../dist/assets/interion-desing/desing-3.jpg";
+import desing1 from "../../assets/interion-desing/design-1.jpg";
+import desing2 from "../../assets/interion-desing/design-2.jpg";
+import desing3 from "../../assets/interion-desing/desing-3.jpg";
 import FirstButton from "../Buttons/Btn-1/FirstButton";
 
 const ImageSlider = () => {
