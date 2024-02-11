@@ -30,3 +30,35 @@
 //     transform: translateX(-100px);
 //     opacity: 0;
 // }
+.gallery-container-page{
+    width: 1500px;
+    overflow: hidden;
+}
+.gallery-container{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+}
+.gallery-container:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.left-gallery-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    p{
+        color: white;
+    }
+}
+.right-gallery-img{
+    display: flex;
+    align-items: center;
+    // width: 70%;
+}

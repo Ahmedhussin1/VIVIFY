@@ -142,6 +142,7 @@ function Home() {
           </p>
           <FirstButton title={"Learn More"} link={"/"} />
         </div>
+        
         <div className="right-sustainability-section-container">
           <div className="first-sustainability-row">
             <div className="sustainability-icon-container">
@@ -153,6 +154,7 @@ function Home() {
               <p>Smaller Footprint</p>
             </div>
           </div>
+
           <div className="second-sustainability-row">
             <div className="sustainability-icon-container">
               <img src={company} />
@@ -167,6 +169,7 @@ function Home() {
               <p>Reduced Waste Onsite</p>
             </div>
           </div>
+
           <div className="third-sustainability-row">
             <div className="sustainability-icon-container">
               <img src={recycle} />

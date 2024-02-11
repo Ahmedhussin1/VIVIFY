@@ -7,9 +7,11 @@ import Home from './Pages/Home page/Home';
 import AboutPage from './Pages/About page/AboutPage';
 import ContactPage from './Pages/Contact Page/ContactPage';
 import Projects from './Pages/Projects/Projects';
+import PreLoader from './Components/Preloader/Preloader';
 function App() {
   return (
     <div>
+    <PreLoader/>
       <Navbar />
       <BrowserRouter>
         <Routes>
