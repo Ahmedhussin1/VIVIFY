@@ -1,50 +1,16 @@
-// import { useRef } from "react";
-// import { useInView } from "framer-motion";
-// import "./Projects.scss";
-// import GridCardsAnimation from "../../Components/Grid cards/GridCardsAnimation";
 import project1 from '../../assets/interion-desing/office1.jpg';
 import FifthButton from '../../Components/Buttons/Btn-5/FifthButton';
 import Horizontal from '../../Components/Horizontal Scroll/Horizontal';
+import line from '../../assets/banners/4.png'
 import './Projects.scss'
 import { motion } from 'framer-motion';
-
-// function Section({ children }) {
-//   const ref = useRef(null);
-//   const isInView = useInView(ref, { once: true });
-
-//   return (
-//     <section ref={ref}>
-//       <span
-//         style={{
-//           transform: isInView ? "none" : "translateX(-200px)",
-//           opacity: isInView ? 1 : 0,
-//           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-//         }}
-//       >
-//         {children}
-//       </span>
-//     </section>
-//   );
-// }
-// function Projects() {
-//   return (
-//       <div className="project-page-container">
-//         <Section>
-//           <GridCardsAnimation/>
-//         </Section>
-//         <Section>when</Section>
-//         <Section>in</Section>
-//         <Section>view!</Section>
-//       </div>
-//   );
-// }
-
-// export default Projects;
 
 function Projects() {
   return (
     <div className="gallery-container-page">
-    <Horizontal/>
+    <div className='flex justify-center'><img src={line}/></div>
+      <div className='mt-[100px]'><Horizontal /></div>
+
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +28,7 @@ function Projects() {
           transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
           className="left-gallery-text"
         >
-          <h1 className='text-white'>ONE STOP SHOP</h1>
+          <h1 className="text-white">ONE STOP SHOP</h1>
           <p>
             When the Falkbuilt San Diego Branch started talking with Genuine
             McCarthy Enterprises about renovating their Newport Beach space, the
@@ -86,6 +52,8 @@ function Projects() {
           </p>
           <FifthButton title={"Learn More"} />
         </motion.div>
+        {/* horizontal scroll section */}
+        {/* second Project */}
         <motion.div
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}

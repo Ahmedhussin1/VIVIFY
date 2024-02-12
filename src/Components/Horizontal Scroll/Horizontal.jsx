@@ -7,6 +7,7 @@ import project2 from '../../assets/interion-desing/project-img-2.jpg'
 import project3 from '../../assets/interion-desing/project-img-3.jpg'
 import project4 from '../../assets/interion-desing/project-img-4.jpg'
 import FifthButton from '../Buttons/Btn-5/FifthButton';
+import icon from '../../assets/Logo/logo3.png'
 
 function Horizontal() {
     const sectionRef =useRef(null);
@@ -22,7 +23,7 @@ function Horizontal() {
             translateX: 0,
           },
           {
-            translateX: "-300vw",
+            translateX: "-370vw",
             ease: "none",
             duration: 1,
             scrollTrigger: {
@@ -46,9 +47,9 @@ function Horizontal() {
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section">
-            <img src={project1} />
-            <div className='scroll-section-desc'>
-            <h3>First Project</h3>
+            {/* <img src={project1} />
+            <div className="scroll-section-desc">
+              <h3>First Project</h3>
               <p>
                 When the Falkbuilt San Diego Branch started talking with Genuine
                 McCarthy Enterprises about renovating their Newport Beach space,
@@ -60,20 +61,63 @@ function Horizontal() {
                 emblazoned with a vintage corporate photo, McCarthy is thrilled
                 with the result.
               </p>
-              <FifthButton title={'Read More'}/>
-            </div>
+              <FifthButton title={"Read More"} />
+            </div> */}
+            <img src={icon}/>
           </div>
           <div className="scroll-section">
             <img src={project2} />
-            <h3>First Project</h3>
+            <div className="scroll-section-desc">
+              <h3>First Project</h3>
+              <p>
+                When the Falkbuilt San Diego Branch started talking with Genuine
+                McCarthy Enterprises about renovating their Newport Beach space,
+                the construction company was primarily interested in hearing
+                about glass fronts for offices. But in no time, McCarthy
+                realized Digital Component Construction could do much more for
+                them, their schedule, and their space. From a custom timber
+                ceiling and stunning millwork to a Zero Gravity wall and another
+                emblazoned with a vintage corporate photo, McCarthy is thrilled
+                with the result.
+              </p>
+              <FifthButton title={"Read More"} />
+            </div>
           </div>
           <div className="scroll-section">
             <img src={project3} />
-            <h3>First Project</h3>
+            <div className="scroll-section-desc">
+              <h3>First Project</h3>
+              <p>
+                When the Falkbuilt San Diego Branch started talking with Genuine
+                McCarthy Enterprises about renovating their Newport Beach space,
+                the construction company was primarily interested in hearing
+                about glass fronts for offices. But in no time, McCarthy
+                realized Digital Component Construction could do much more for
+                them, their schedule, and their space. From a custom timber
+                ceiling and stunning millwork to a Zero Gravity wall and another
+                emblazoned with a vintage corporate photo, McCarthy is thrilled
+                with the result.
+              </p>
+              <FifthButton title={"Read More"} />
+            </div>
           </div>
           <div className="scroll-section">
             <img src={project4} />
-            <h3>First Project</h3>
+            <div className="scroll-section-desc">
+              <h3>First Project</h3>
+              <p>
+                When the Falkbuilt San Diego Branch started talking with Genuine
+                McCarthy Enterprises about renovating their Newport Beach space,
+                the construction company was primarily interested in hearing
+                about glass fronts for offices. But in no time, McCarthy
+                realized Digital Component Construction could do much more for
+                them, their schedule, and their space. From a custom timber
+                ceiling and stunning millwork to a Zero Gravity wall and another
+                emblazoned with a vintage corporate photo, McCarthy is thrilled
+                with the result.
+              </p>
+              <FifthButton title={"Read More"} />
+            </div>
           </div>
         </div>
       </div>

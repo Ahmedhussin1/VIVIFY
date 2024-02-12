@@ -8,4 +8,25 @@
     text-align: left;
     margin-bottom: 10px;    
     color: #fff;
+
+// media queries
+@media (max-width: 1200px) {
+    font-size: 60px;
+    /* Adjust font size for medium-sized screens */
+}
+
+@media (max-width: 992px) {
+    font-size: 48px;
+    /* Adjust font size for smaller screens */
+}
+
+@media (max-width: 768px) {
+    font-size: 36px;
+    /* Adjust font size for tablets and smaller screens */
+}
+
+@media (max-width: 576px) {
+    font-size: 24px;
+    /* Adjust font size for mobile devices */
+}
 }

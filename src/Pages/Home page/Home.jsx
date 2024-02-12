@@ -1,6 +1,5 @@
 import "./Home.scss";
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 // importing assets
 import firstSectionVid from '../../assets/1692104934-3-hcd-2023-sequence-01.mp4'
 import secondSectionVid from '../../assets/1658166620-sequence-01_3.mp4'
@@ -18,7 +17,7 @@ import TextAnimation from "../../Components/Text Animations/TextAnimation";
 import FirstButton from "../../Components/Buttons/Btn-1/FirstButton";
 import ImageSlider from "../../Components/carousel/Carousel";
 import LinkButton from "../../Components/Buttons/Btn-4/LinkButton";
-import { useRef } from "react";
+import icon from '../../assets/Logo/logo2.png'
 
 function Home() {
   
@@ -40,7 +39,7 @@ function Home() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
           >
-            <p>
+            <p className="">
               Powered by Echo technology,
               <br /> we use proven construction methods to build beautiful,
               <br /> high-performing + cost-effective environments.
@@ -48,6 +47,7 @@ function Home() {
           </motion.div>
         </div>
       </div>
+
       {/* second video */}
       <div className="second-home-page-hero">
         <video
@@ -142,9 +142,9 @@ function Home() {
           </p>
           <FirstButton title={"Learn More"} link={"/"} />
         </div>
-        
+
         <div className="right-sustainability-section-container">
-          <div className="first-sustainability-row">
+          {/* <div className="first-sustainability-row">
             <div className="sustainability-icon-container">
               <img src={boxIcon} />
               <p>Connected Design</p>
@@ -179,7 +179,8 @@ function Home() {
               <img src={secondTruck} />
               <p>Recyclable Materials</p>
             </div>
-          </div>
+          </div> */}
+          <img className="flex justify-center align-middle" src={icon}/>
         </div>
       </div>
       {/* carrousel section */}

@@ -10,11 +10,12 @@ const GridSquareVariants = {
 };
 function GridCardsAnimation() {
   return (
-    <div className="flex flex-col gap-10 overflow-x-hidden">
+    <div className="flex flex-col gap-10 overflow-x-hidden pt-[50px]">
       <motion.section
         variants={GridContainerVariants}
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{once:true}}
         className="grid grid-cols-3 p-10 gap-10"
       >
         {/* fist square */}

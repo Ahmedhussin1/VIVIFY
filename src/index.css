@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+img{
+    display: block;
+    max-width: 100%;
+}
 body{
     background-color: black;
+}
+*{
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --white-color:#ffffff
+    --black-color:#000000
+    --off-white-color:#f1eee5
 }
