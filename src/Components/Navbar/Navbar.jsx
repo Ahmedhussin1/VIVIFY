@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import icons1 from '../../assets/Logo/logo1.png'
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import './Navbar.scss'
 
 const Navbar = () => {
   // State to manage the navbar's visibility
@@ -16,9 +16,9 @@ const Navbar = () => {
   // Array containing navigation items
   const navItems = [
     { id: 1, text: "Home", link: "/" },
-    { id: 2, text: "Gallery", link: "/projects" },
-    { id: 4, text: "About", link: "/about" },
-    { id: 5, text: "Contact", link: "/contact" },
+    { id: 2, text: "Gallery", link: "/projects/gallery" },
+    { id: 4, text: "About", link: "about" },
+    { id: 5, text: "Contact", link: "contact" },
     { id: 3, text: "Resources", link: "/" },
   ];
 
@@ -27,14 +27,12 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-black flex justify-between items-center h-24 max-w-[1600px] mx-auto px-4 text-white z-10`}
+      className={`bg-black flex justify-between items-center h-24 max-w-[1600px] mx-auto px-4 text-white z-10 nav`}
     >
       {/* Logo */}
-      <h1 className="w-full text-3xl font-bold tracking-wider text-white">
-        <a href="/">
+        <a  href="/">
           <img className="w-[200px] h-[200px]" src={icons1} />
         </a>
-      </h1>
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">

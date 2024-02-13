@@ -8,8 +8,12 @@ import { motion } from 'framer-motion';
 function Projects() {
   return (
     <div className="gallery-container-page">
-    <div className='flex justify-center'><img src={line}/></div>
-      <div className='mt-[100px]'><Horizontal /></div>
+      <div className="flex justify-center">
+        <img src={line} />
+      </div>
+      <div className="mt-[100px]">
+        <Horizontal />
+      </div>
 
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
