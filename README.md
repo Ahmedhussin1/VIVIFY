@@ -22,9 +22,9 @@ Ready to transform your space? Contact us today to schedule a consultation with 
 
 ## About the Developer
 
-This website was crafted with care by Practical Solution, a leading frontend web development company dedicated to delivering innovative digital solutions. With a passion for design and technology, we're committed to creating seamless and engaging user experiences.
+This website was crafted with care by Practical Solution, a leading marketing and ecommerce company dedicated to delivering innovative digital solutions. With a passion for design and technology, we're committed to creating seamless and engaging user experiences.
 
-For inquiries or collaboration opportunities, please contact us at [contact@practicalsolution.com](mailto:contact@practicalsolution.com).
+For inquiries or collaboration opportunities, please contact us at [info@practicalsolution.com](mailto:contact@practicalsolution.com).
 
 ---
 
