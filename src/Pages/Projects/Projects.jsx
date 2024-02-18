@@ -1,20 +1,25 @@
-import project1 from '../../assets/interion-desing/office1.jpg';
-import FifthButton from '../../Components/Buttons/Btn-5/FifthButton';
-import Horizontal from '../../Components/Horizontal Scroll/Horizontal';
-import line from '../../assets/banners/4.png'
-import './Projects.scss'
-import { motion } from 'framer-motion';
+import project1 from "../../assets/interion-desing/office1.jpg";
+import FifthButton from "../../Components/Buttons/Btn-5/FifthButton";
+import Horizontal from "../../Components/Horizontal Scroll/Horizontal";
+import line from "../../assets/banners/4.png";
+import ProjectData from "./ProjectData";
+import "./Projects.scss";
+import { motion } from "framer-motion";
 
 function Projects() {
   return (
     <div className="gallery-container-page">
+      {/* hero section img */}
       <div className="flex justify-center">
         <img src={line} />
       </div>
+
+      {/* horizontal scroll section */}
       <div className="mt-[100px]">
         <Horizontal />
       </div>
 
+      {/* title section */}
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,6 +29,15 @@ function Projects() {
       >
         Our Projects
       </motion.h1>
+      {/* rendered projects section */}
+      {ProjectData.map((project) => (
+        <div key={project.id}>
+          <h1 className="text-white">{project.name}</h1>
+          <p className="text-white">{project.longDesc}</p>
+          <FifthButton link={`/projects/${project.id}`} title={"Read More"} />
+        </div>
+      ))}
+      {/* first project container */}
       <div className="gallery-container">
         <motion.div
           initial={{ opacity: 0, x: -200 }}
@@ -68,6 +82,7 @@ function Projects() {
           <img src={project1} />
         </motion.div>
       </div>
+      {/* second project container */}
       <div className="gallery-container">
         <motion.div
           initial={{ opacity: 0, x: 200 }}
@@ -113,4 +128,4 @@ function Projects() {
   );
 }
 
-export default Projects
+export default Projects;

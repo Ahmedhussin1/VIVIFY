@@ -1,12 +1,13 @@
-import  { useState } from "react";
-import icons1 from '../../assets/Logo/logo1.png'
+import { useState } from "react";
+// import Link from "react-router-dom";
+import { Link } from "react-router-dom";
+import icons1 from "../../assets/Logo/logo1.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import './Navbar.scss'
+import "./Navbar.scss";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
   const [nav, setNav] = useState(false);
-
 
   // Toggle function to handle the navbar's display
   const handleNav = () => {
@@ -19,20 +20,17 @@ const Navbar = () => {
     { id: 2, text: "Gallery", link: "/projects/gallery" },
     { id: 4, text: "About", link: "about" },
     { id: 5, text: "Contact", link: "contact" },
-    { id: 3, text: "Resources", link: "/" },
+    { id: 3, text: "Services", link: "services" },
   ];
-
-  
-
 
   return (
     <div
       className={`bg-black flex justify-between items-center h-24 max-w-[1600px] mx-auto px-4 text-white z-10 nav`}
     >
       {/* Logo */}
-        <a  href="/">
-          <img className="w-[200px] h-[200px]" src={icons1} />
-        </a>
+      <Link to="/">
+        <img className="w-[200px] h-[200px]" src={icons1} />
+      </Link>
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">
@@ -41,7 +39,7 @@ const Navbar = () => {
             key={item.id}
             className="p-4  rounded-lg m-2 cursor-pointer duration-300 hover:scale-110"
           >
-            <a href={`${item.link}`}>{item.text}</a>
+            <Link to={`${item.link}`}>{item.text}</Link>
           </li>
         ))}
       </ul>
@@ -70,7 +68,7 @@ const Navbar = () => {
             key={item.id}
             className="p-4 border-b rounded-xl  duration-300  cursor-pointer border-none hover:scale-105 "
           >
-            <a href={item.link}>{item.text}</a>
+            <Link to={item.link}>{item.text}</Link>
           </li>
         ))}
       </ul>

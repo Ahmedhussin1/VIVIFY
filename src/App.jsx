@@ -12,22 +12,26 @@ import Office from "./Pages/Projects/Categories Pages/Office/Office";
 import HealthCare from "./Pages/Projects/Categories Pages/HelthCare/HealthCare";
 import Default from "./Pages/Projects/Categories Pages/Default/Default";
 import AllProductsPage from "./Pages/Projects/All Products/AllProductsPage";
+import ServicesPage from "./Pages/Services page/ServicesPage";
+import SingleProject from "./Pages/Projects/SingleProject";
 function App() {
   return (
     <div>
-      <Navbar />
-      <PreLoader />
       <BrowserRouter>
+        <PreLoader />
+        <Navbar />
         <Routes>
           <Route index element={<Home />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="projects/:id" element={<SingleProject />} />
           <Route path="projects" element={<Default />}>
             <Route path="gallery" element={<Projects />} />
             <Route path="office" element={<Office />} />
             <Route path="all-projects" element={<AllProductsPage />} />
             <Route path="healthcare" element={<HealthCare />} />
           </Route>
+          <Route path="/services" element={<ServicesPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

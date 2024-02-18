@@ -38,105 +38,123 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-5xl flex mt-[100px]  justify-around mx-auto gap-5 align-middle">
-      <form onSubmit={handleSubmit} className="space-y-5 w-full">
-        <div>
-          <label htmlFor="name" className="block font-medium text-white">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="email" className="block font-medium text-white">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="phone" className="block font-medium text-white">
-            Phone
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
-          />
-        </div>
-        <div>
-          <label htmlFor="location" className="block font-medium text-white">
-            Location
-          </label>
-          <select
-            id="location"
-            name="location"
-            value={formData.location}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
-            required
-          >
-            <option value="">Select Location</option>
-            <option value="New York">New York</option>
-            <option value="Los Angeles">Los Angeles</option>
-            <option value="Chicago">Chicago</option>
-            <option value="Houston">Houston</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        <div>
-          <label htmlFor="projectType" className="block font-medium text-white">
-            Project Type
-          </label>
-          <input
-            type="text"
-            id="projectType"
-            name="projectType"
-            placeholder="ex: home, office, landscape, etc..."
-            value={formData.projectType}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
-          />
-        </div>
-        <div>
-          <label htmlFor="message" className="block font-medium text-white">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows="4"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="inline-block w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+    <div className="flex bg-[#1a1a1a] w-[1200px] rounded-lg justify-around mx-auto gap-5 align-middle p-[100px] contact-container">
+      <div className="w-[70%] mx-auto">
+        <motion.form
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+          onSubmit={handleSubmit}
+          className="space-y-5 w-full"
         >
-          Submit
-        </button>
-      </form>
-      <div className="bg-[#1a1a1a] w-4/6 p-5 flex flex-col align-middle justify-between details-div">
+          <div>
+            <label htmlFor="name" className="block font-medium text-white">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block font-medium text-white">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="phone" className="block font-medium text-white">
+              Phone
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
+            />
+          </div>
+          <div>
+            <label htmlFor="location" className="block font-medium text-white">
+              Location
+            </label>
+            <select
+              id="location"
+              name="location"
+              value={formData.location}
+              onChange={handleChange}
+              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
+              required
+            >
+              <option value="">Select Location</option>
+              <option value="New York">New York</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Chicago">Chicago</option>
+              <option value="Houston">Houston</option>
+              {/* Add more options as needed */}
+            </select>
+          </div>
+          <div>
+            <label
+              htmlFor="projectType"
+              className="block font-medium text-white"
+            >
+              Project Type
+            </label>
+            <input
+              type="text"
+              id="projectType"
+              name="projectType"
+              placeholder="ex: home, office, landscape, etc..."
+              value={formData.projectType}
+              onChange={handleChange}
+              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3"
+            />
+          </div>
+          <div>
+            <label htmlFor="message" className="block font-medium text-white">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="4"
+              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="inline-block w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Submit
+          </button>
+        </motion.form>
+      </div>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+        className="w-4/6 p-5 flex flex-col align-middle justify-between details-div"
+      >
         <h1 className="flex justify-center text-4xl text-white">
           Let's Work Together{" "}
         </h1>
@@ -173,7 +191,7 @@ const ContactForm = () => {
             <RiInstagramFill color="white" size={30} />
           </motion.div>{" "}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

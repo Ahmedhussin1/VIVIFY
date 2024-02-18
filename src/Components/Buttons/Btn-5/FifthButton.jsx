@@ -1,8 +1,9 @@
 import React from 'react'
 import './FifthButton.scss'
+import { Link } from 'react-router-dom'
 function FifthButton({title,link}) {
   return (
-    <a href={link}><button className="fifth-button">{title}</button></a>
+    <Link to={link}><button className="fifth-button">{title}</button></Link>
   )
 }
 
