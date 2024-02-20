@@ -1,5 +1,6 @@
 import FirstButton from "../../../Components/Buttons/Btn-1/FirstButton";
 import icon from "../../../assets/Logo/logo2.png";
+import "./HomePageSustainabilitySection.scss";
 function HomePageSustainabilitySection() {
   return (
     <div className="sustainability-section-container">
@@ -62,4 +63,4 @@ function HomePageSustainabilitySection() {
   );
 }
 
-export default HomePageSustainabilitySection
+export default HomePageSustainabilitySection;
