@@ -13,28 +13,6 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops, 1200px and up)
 // third section
 
 // team section
-.team-section-container {
-    position: relative;
-    img{
-        height: 80vh;
-        width: 100%;
-        object-fit: cover;
-        
-    }
-}
-
-.team-section-overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: white;
-    .team-section-btn{
-        margin-top: 50px;
-    }
-    /* Adjust text color as needed */
-}
 
 
 // sustainability section

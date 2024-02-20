@@ -1,7 +1,7 @@
 import TextAnimation from "../../../Components/Text Animations/TextAnimation";
 import FirstButton from "../../../Components/Buttons/Btn-1/FirstButton";
 import teamImg from "../../../assets/team-img.jpg";
-
+import "./HomePageTeamSection.scss";
 function HomePageTeamSection() {
   return (
     <div className="team-section-container">
@@ -26,4 +26,4 @@ function HomePageTeamSection() {
   );
 }
 
-export default HomePageTeamSection
+export default HomePageTeamSection;
