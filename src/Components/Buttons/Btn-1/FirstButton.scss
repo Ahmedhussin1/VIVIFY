@@ -138,3 +138,25 @@
 .btn-17:hover:after {
     --progress: -102%;
 }
+
+.btn-17 {
+    // Existing styles here...
+
+    @media screen and (max-width: 768px) {
+        // Adjustments for screens up to 768px wide
+        font-size: 80%;
+        padding: 0.6rem 2.5rem;
+    }
+
+    @media screen and (max-width: 640px) {
+        // Adjustments for screens up to 640px wide
+        font-size: 70%;
+        padding: 0.5rem 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        // Adjustments for screens up to 480px wide
+        font-size: 60%;
+        padding: 0.4rem 1.5rem;
+    }
+}

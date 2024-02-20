@@ -30,15 +30,43 @@ function Projects() {
         Our Projects
       </motion.h1>
       {/* rendered projects section */}
-      {ProjectData.map((project) => (
-        <div key={project.id}>
-          <h1 className="text-white">{project.name}</h1>
-          <p className="text-white">{project.longDesc}</p>
-          <FifthButton link={`/projects/${project.id}`} title={"Read More"} />
-        </div>
-      ))}
+      <div className="mt-[100px]">
+        {ProjectData.map((project) => (
+          <div
+            className={`flex ${
+              project.id % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            } items-center justify-around p-5`}
+            key={project.id}
+          >
+            <motion.div
+              initial={{ opacity: 0, x: project.id % 2 === 0 ? -200 : 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+              className="flex flex-col justify-evenly items-center h-[100vh] w-[30vw] "
+            >
+              <h1 className="text-white">{project.name}</h1>
+              <p className="text-white">{project.longDesc}</p>
+              <FifthButton
+                link={`/projects/${project.id}`}
+                title={"Read More"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: project.id % 2 === 0 ? 200 : -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+              className="flex justify-center mt-[100px]"
+            >
+              <img className="h-[80vh]" src={project.mainImg} />
+            </motion.div>
+          </div>
+        ))}
+      </div>
       {/* first project container */}
-      <div className="gallery-container">
+
+      {/* <div className="gallery-container">
         <motion.div
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -69,10 +97,9 @@ function Projects() {
             live-linked design changes
           </p>
           <FifthButton title={"Learn More"} />
-        </motion.div>
-        {/* horizontal scroll section */}
-        {/* second Project */}
-        <motion.div
+        </motion.div> */}
+      {/* second Project */}
+      {/* <motion.div
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -81,9 +108,9 @@ function Projects() {
         >
           <img src={project1} />
         </motion.div>
-      </div>
+      </div> */}
       {/* second project container */}
-      <div className="gallery-container">
+      {/* <div className="gallery-container">
         <motion.div
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -123,7 +150,7 @@ function Projects() {
         >
           <img src={project1} />
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 }
