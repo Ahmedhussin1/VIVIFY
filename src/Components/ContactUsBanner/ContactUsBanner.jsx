@@ -1,4 +1,5 @@
 import LinkButton from "../Buttons/Btn-4/LinkButton";
+import "./ContactUsBanner.scss";
 function ContactUsBanner() {
   return (
     <div className="contact-banner-container">
@@ -26,4 +27,4 @@ function ContactUsBanner() {
   );
 }
 
-export default ContactUsBanner
+export default ContactUsBanner;

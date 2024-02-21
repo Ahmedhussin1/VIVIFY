@@ -1,0 +1,83 @@
+.contact-banner-container {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    .left-contact-banner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 50px;
+
+        @media screen and (max-width: 480px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .left-contact-banner-desc {
+            p {
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        .left-contact-banner-title {
+            background-color: white;
+
+            h1 {
+                padding: 10px;
+                color: black;
+                font-weight: 700;
+                font-size: 70px;
+            }
+        }
+
+        .left-contact-banner-btn {}
+    }
+
+    .right-contact-banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+
+        p {
+            color: white;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .left-contact-banner-container,
+        .right-contact-banner-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .left-contact-banner-container {
+            gap: 30px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .left-contact-banner-title h1 {
+            font-size: 50px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .left-contact-banner-title h1 {
+            font-size: 40px;
+        }
+
+        .left-contact-banner-desc p {
+            font-size: 50px;
+        }
+    }
+}
