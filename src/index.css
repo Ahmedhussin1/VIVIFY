@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-    /* font-family: 'brutalMilk'; */
     font-family: 'brutalMilkTTF';
-    src: url('./assets/Fonts/BrutalMilkNo3-Medium.ttf') format('truetype');
-    /* src: url('./assets/Fonts/Brutal\ Milk\ No\ 3\ Variable.woff') format('woff'); */
-    /* Add more src declarations for different font weights or styles if needed */
-}
+    src: url('./assets/Fonts/BrutalMilkNo3-Medium.ttf');
+   }
 
 * {
+    font-family: 'brutalMilkTTF';
 }
 
 img{
