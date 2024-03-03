@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import icon from '../../assets/Logo/logo3.png'
-import icon2 from '../../assets/Logo/logo1.png'
-import './Footer.scss'
+import icon from "../../assets/Logo/logo3.png";
+import icon2 from "../../assets/Logo/logo1.png";
+import "./Footer.scss";
 function Footer() {
   return (
     <footer className="mt-[100px] border-t border-neutral-600  text-center text-neutral-600 bg-[#1a1a1a] dark:text-neutral-200 lg:text-left">
@@ -118,46 +118,92 @@ function Footer() {
           </div>
           {/* <!-- Products section --> */}
           <div className="">
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <motion.h6
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            >
               Services
-            </h6>
-            <p className="mb-4">
+            </motion.h6>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4"
+            >
               <a className="text-neutral-600 dark:text-neutral-200">Angular</a>
-            </p>
-            <p className="mb-4">
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4"
+            >
               <a className="text-neutral-600 dark:text-neutral-200">React</a>
-            </p>
-            <p className="mb-4">
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4"
+            >
               <a className="text-neutral-600 dark:text-neutral-200">Vue</a>
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+            >
               <a className="text-neutral-600 dark:text-neutral-200">Laravel</a>
-            </p>
+            </motion.p>
           </div>
           {/* <!-- Useful links section --> */}
           <div className="">
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <motion.h6
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            >
               Useful links
-            </h6>
-            <p className="mb-4">
+            </motion.h6>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4"
+            >
               <a className="text-neutral-600 dark:text-neutral-200">Pricing</a>
-            </p>
-            <p className="mb-4">
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4"
+            >
               <a className="text-neutral-600 dark:text-neutral-200">Settings</a>
-            </p>
-            <p className="mb-4">
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4"
+            >
               <a className="text-neutral-600 dark:text-neutral-200">Orders</a>
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+            >
               <a className="text-neutral-600 dark:text-neutral-200">Help</a>
-            </p>
+            </motion.p>
           </div>
           {/* <!-- Contact section --> */}
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <motion.h6
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            >
               Contact
-            </h6>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
+            </motion.h6>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4 flex items-center justify-center md:justify-start"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -168,8 +214,12 @@ function Footer() {
                 <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
               </svg>
               New York, NY 10012, US
-            </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4 flex items-center justify-center md:justify-start"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -180,8 +230,12 @@ function Footer() {
                 <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
               </svg>
               info@example.com
-            </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="mb-4 flex items-center justify-center md:justify-start"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -195,8 +249,12 @@ function Footer() {
                 />
               </svg>
               + 01 234 567 88
-            </p>
-            <p className="flex items-center justify-center md:justify-start">
+            </motion.p>
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeInOut" }}
+              className="flex items-center justify-center md:justify-start"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -210,7 +268,7 @@ function Footer() {
                 />
               </svg>
               + 01 234 567 89
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
@@ -229,4 +287,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
