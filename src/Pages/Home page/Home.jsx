@@ -26,15 +26,16 @@ function Home() {
       {/* team section*/}
       <HomePageTeamSection />
       {/* sustainability section */}
-      <HomePageSustainabilitySection/>
+      <HomePageSustainabilitySection />
       {/* carrousel section */}
       <div className="carousel-section-container">
         <ImageSlider />
       </div>
+      
       {/* horizontal line */}
       <hr className="border-none bg-white h-px w-1/2 mx-auto my-4" />
       {/* contact us section */}
-      <ContactUsBanner/>
+      <ContactUsBanner />
     </motion.div>
   );
 }

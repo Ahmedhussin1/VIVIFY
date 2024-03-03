@@ -1,10 +1,14 @@
-import React from 'react'
-import './FifthButton.scss'
-import { Link } from 'react-router-dom'
-function FifthButton({title,link}) {
+import "./FifthButton.scss";
+import { Link } from "react-router-dom";
+// function to make route to the page from the beginning 
+function FifthButton({ title, link, id }) {
   return (
-    <Link to={link}><button className="fifth-button">{title}</button></Link>
-  )
+    <Link to={link} id={id}>
+      <button className="fifth-button">
+        {title}
+      </button>
+    </Link>
+  );
 }
 
-export default FifthButton
+export default FifthButton;

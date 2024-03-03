@@ -1,24 +1,29 @@
-@font-face {
-    font-family: 'brutal milk';
-    src: url('./assets/Fonts/Brutal\ Milk\ No\ 3\ Variable.woff') format('woff');
-    /* Add more src declarations for different font weights or styles if needed */
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    /* font-family: 'brutalMilk'; */
+    font-family: 'brutalMilkTTF';
+    src: url('./assets/Fonts/BrutalMilkNo3-Medium.ttf') format('truetype');
+    /* src: url('./assets/Fonts/Brutal\ Milk\ No\ 3\ Variable.woff') format('woff'); */
+    /* Add more src declarations for different font weights or styles if needed */
+}
+
+* {
+}
 
 img{
     display: block;
     max-width: 100%;
 }
 body{
+        font-family: 'brutalMilkTTF' sans-serif;
     background-color:black;
     /* background-color: #1a1a1a !important;
     background-image: url('./assets/svg/lines4.png') !; */
 }
-*{
-    font-family: 'brutal milk', sans-serif;
-}
+
 :root{
     --white-color:#ffffff
     --black-color:#000000

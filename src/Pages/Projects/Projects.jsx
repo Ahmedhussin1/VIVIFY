@@ -1,4 +1,4 @@
-import project1 from "../../assets/interion-desing/office1.jpg";
+// import project1 from "../../assets/interion-desing/office1.jpg";
 import FifthButton from "../../Components/Buttons/Btn-5/FifthButton";
 import Horizontal from "../../Components/Horizontal Scroll/Horizontal";
 import line from "../../assets/banners/4.png";
